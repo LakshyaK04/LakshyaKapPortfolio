@@ -1,0 +1,168 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styling with Brighter Gradient Background */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #31473A, #ffffefff);
+    line-height: 1.6;
+    margin: 0; /* Remove the top grey bar */
+    padding: 0; /* Ensure no default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Container Styling with Shadow */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  .container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slideInDown 1s ease-out; /* Slide-in animation for header */
+  }
+  
+  h1 {
+    color: #7C8363; /* Brighter, warm coral color */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .last-updated {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Section Styling with Shadow */
+  .section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #EDF4F2;
+    box-shadow: 0 4px 8px rgba(3, 3, 3, 0.05);
+    opacity: 0; /* Start with hidden sections */
+    transform: translateY(20px); /* Start with a slight offset */
+    transition: opacity 1s ease, transform 1s ease; /* Animation for smooth fade-in */
+  }
+  
+  /* Text Styling */
+  h2 {
+    color: #264653; /* Deep, vibrant teal color */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid; #EDF4F2
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  p, ul {
+    margin: 10px 0;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    list-style-type: disc;
+  }
+  
+  /* Links with Hover Shade */
+  a {
+    color: #0b90fd;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  a:hover {
+    color: #eca7c175; /* Lighter coral on hover */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-out; /* Fade-in animation for footer */
+  }
+  
+  /* Button Styling with Bright Color and Shadow */
+  button {
+    background-color: #f0716f7;
+    color: #EDF4F2;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: buttonHover 1s ease-out infinite alternate; /* Button hover animation */
+  }
+  button:hover {
+    background-color: #ffafcc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Keyframe Animations */
+  
+  /* Slide-in animation for header */
+  @keyframes slideInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in animation for footer */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Button Hover Animation */
+  @keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Fade-In Animation for Sections */
+  .section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
